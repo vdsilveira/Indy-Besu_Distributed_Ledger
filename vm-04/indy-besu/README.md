@@ -78,8 +78,10 @@ sudo nano .env
 
 - 2- Altere o caminho para o arquivo "log-config.xml"
 
-
-      LOG4J_CONFIGURATION_FILE=/coloque/o/seu/caminho/indy-besu/network/config/besu/log-config.xml
+```bash
+LOG4J_CONFIGURATION_FILE=/coloque/o/seu/caminho/indy-besu/network/config/besu/log-config.xml
+```
+      
 
 ##  3 - Rodando os containers
 
