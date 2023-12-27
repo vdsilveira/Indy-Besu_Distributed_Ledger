@@ -1,7 +1,7 @@
 
 # Indy-Besu: Distributed Ledger
 
-Este repositório é uma adaptação do repositório Indy-besu configurado para a distribuiçãos de Nodes em maquinas virtuais
+Este repositório é uma adaptação do repositório Indy-besu configurado para a distribuição dos Nodes em maquinas virtuais
 
 - [Repositório Original](https://github.com/DSRCorporation/indy-node/tree/indy-besu/indy-besu)
 
