@@ -8,6 +8,9 @@ Este repositório é uma adaptação do repositório Indy-besu configurado para 
 # ⚙️ Configurações 
 ## 1 - Baixe os arquivos das pastas vm  
 
+  OBS: Pode ser usado o mesmo comando apenas alterando o diretório vm-0..
+
+
  - ### Em sua vm-01 execute o seguinte comando:
 ```bash
 git clone --single-branch --branch main --depth 1 https://github.com/vdsilveira/Indy-Besu_Distributed_Ledger.git
