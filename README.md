@@ -59,7 +59,7 @@ rm -rf Indy-Besu_Distributed_Ledger
 - 1-Altere o Node Number
 
 - 2- Altere os IPs dos Hosts com os IPs de suas respectivamas Maquinas virtuais
-```bash
+```
  #HOSTS
     NODE_NUMBER=1
     HOST1=127.0.0.1
