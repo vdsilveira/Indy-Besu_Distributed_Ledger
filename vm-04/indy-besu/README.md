@@ -50,7 +50,7 @@ rm -rf Indy-Besu_Distributed_Ledger
 
 ## 2 - Dentro de cada VM configure os Nodes  
 
-*obs: Estes passo devem ser feitos em ada VM*
+*obs: Estes passos devem ser repetidos em cada VM*
 
 ## 🗂️ Pastas:
 
