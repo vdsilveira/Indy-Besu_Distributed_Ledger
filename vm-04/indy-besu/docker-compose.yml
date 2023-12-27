@@ -1,0 +1,30 @@
+version: '3.6'
+
+services:
+
+  validator-node_4:
+    restart: "on-failure"
+    image: hyperledger/besu:${BESU_VERSION:-latest}
+    env_file:
+      - ./network/config/besu/.env
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        cp ./network/config/besu/genesis.json /config/genesis.json  # Copia o genesis.json para o diretório /config/ no contêiner
+
+        /opt/besu/bin/besu \
+        --config-file=/config/config.toml \
+        --p2p-host=${HOST4} \
+        --rpc-http-api=EEA,WEB3,ETH,NET,TRACE,DEBUG,ADMIN,TXPOOL,PERM,${BESU_CONS_ALGO:-QBFT} \
+        --rpc-ws-api=EEA,WEB3,ETH,NET,TRACE,DEBUG,ADMIN,TXPOOL,PERM,${BESU_CONS_ALGO:-QBFT} ;
+    ports:
+      - 8545:8545/tcp
+      - 30303:30303
+      - 9545:9545
+    labels:
+      - "consensus=besu"
+    volumes:
+      - ./network/config/besu/:/config
+      - ./network/config/nodes/validator4:/opt/besu/keys
+      - ./network/logs/besu:/tmp/besu
