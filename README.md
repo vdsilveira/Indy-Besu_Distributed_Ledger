@@ -93,7 +93,7 @@ LOG4J_CONFIGURATION_FILE=/coloque/o/seu/caminho/indy-besu/network/config/besu/lo
 
 ```
 
-*Obs: Inicie o Node 1 primeiro somente depois os demais Nodes, eles devem sincronizar altomaticamente e após alguns minutos devem gerar blocos*
+*Obs: Inicie o Node 1 e somente depois os demais Nodes, eles devem sincronizar altomaticamente e após alguns minutos devem gerar blocos*
 
 ##  3 - Derrubando os containers
 
